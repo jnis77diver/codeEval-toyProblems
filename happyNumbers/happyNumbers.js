@@ -24,7 +24,7 @@ function happyNumbers(line){
       return;
     }
     else {
-      if(count >= 10000){
+      if(newNum === 4){
         count = 0;
         result = 0;
         return;
@@ -36,5 +36,6 @@ function happyNumbers(line){
 
     }
   }
+  recurse(line);
   return result;
 }
